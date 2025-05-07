@@ -1,0 +1,30 @@
+<mvc:View
+    xmlns:m="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.uxap">
+
+    <ObjectPageLayout showTitleInHeaderContent="true">
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+                    <m:Title text="My project"></m:Title>
+                </expandedHeading>
+                <snappedHeading>
+                    <m:Title text="My project"></m:Title>
+                </snappedHeading>
+                <expandedContent>
+
+                    <m:Title text="SAP UI5"></m:Title>
+                </expandedContent>
+                <snappedContent>
+
+                    <m:Title text="SAP UI5"></m:Title>
+                </snappedContent>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:Label text="Hello"></m:Label>
+        </headerContent>
+    </ObjectPageLayout>
+
+</mvc:View>

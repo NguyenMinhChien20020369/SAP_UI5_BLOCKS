@@ -1,0 +1,9 @@
+<mvc:View
+    controllerName="ui5.blocks.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+>
+
+    <mvc:XMLView viewName="ui5.blocks.view.View1" />
+</mvc:View>

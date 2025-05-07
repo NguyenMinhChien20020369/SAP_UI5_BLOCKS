@@ -1,0 +1,86 @@
+{
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "ui5.blocks",
+        "type": "application",
+        "title": "UI5 TypeScript Blocks",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "i18n": {
+            "bundleName": "ui5.blocks.i18n.i18n",
+            "supportedLocales": [
+                ""
+            ],
+            "fallbackLocale": ""
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "dependencies": {
+            "minUI5Version": "1.132",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
+        "rootView": {
+            "viewName": "ui5.blocks.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "ui5.blocks.i18n.i18n",
+                    "supportedLocales": [
+                        ""
+                    ],
+                    "fallbackLocale": ""
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "type": "View",
+                "viewType": "XML",
+                "path": "ui5.blocks.view",
+                "controlId": "app",
+                "controlAggregation": "pages"
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "overview",
+                    "target": "overview"
+                }
+            ],
+            "targets": {
+                "overview": {
+                    "id": "overview",
+                    "name": "Overview"
+                }
+            }
+        }
+    }
+}
