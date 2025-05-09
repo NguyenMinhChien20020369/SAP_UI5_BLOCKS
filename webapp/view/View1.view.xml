@@ -1,7 +1,10 @@
 <mvc:View
     xmlns:m="sap.m"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.uxap">
+    xmlns="sap.uxap"
+    xmlns:info="ui5.blocks.SharedBlocks.Info"
+    xmlns:employee="ui5.blocks.SharedBlocks.employees"
+    xmlns:orders="ui5.blocks.SharedBlocks.Orders">
 
     <ObjectPageLayout showTitleInHeaderContent="true">
         <headerTitle>
@@ -25,6 +28,39 @@
         <headerContent>
             <m:Label text="Hello"></m:Label>
         </headerContent>
+
+        <sections>
+            <ObjectPageSection titleUppercase="false" title="Infomation">
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <info:Info></info:Info>
+                        </blocks>
+                        <moreBlocks>
+                            <info:Info2></info:Info2>
+                        </moreBlocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="false" title="Employees">
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <employee:Employees></employee:Employees>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="false" title="Orders">
+                <subSections>
+                    <ObjectPageSubSection>
+                        <blocks>
+                            <orders:Orders></orders:Orders>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
     </ObjectPageLayout>
 
 </mvc:View>

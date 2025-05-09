@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.blocks.controller.Employees">
+    <Table items="{/Employees}">
+        <columns>
+            <Column>
+                <Text text="Fist Name"></Text>
+            </Column>
+            <Column>
+                <Text text="Last Name"></Text>
+            </Column>
+            <Column>
+                <Text text="Birth Date"></Text>
+            </Column>
+            <Column>
+                <Text text="Address"></Text>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{FirstName}"></Text>
+                    <Text text="{LastName}"></Text>
+                    <Text text="{BirthDate}"></Text>
+                    <Text text="{Address}"></Text>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

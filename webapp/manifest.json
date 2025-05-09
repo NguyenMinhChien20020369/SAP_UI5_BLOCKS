@@ -13,6 +13,15 @@
                 ""
             ],
             "fallbackLocale": ""
+        },
+        "dataSources": {
+            "Northwind": {
+                "uri": "/V2/Northwind/Northwind.svc/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
         }
     },
     "sap.ui": {
@@ -49,6 +58,13 @@
                         ""
                     ],
                     "fallbackLocale": ""
+                }
+            },
+            "odataModel": {
+                "dataSource": "Northwind",
+                "settings": {
+                    "defaultBindingMode": "TwoWay",
+                    "useBatch": true
                 }
             }
         },
